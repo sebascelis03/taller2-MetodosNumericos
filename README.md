@@ -1,16 +1,43 @@
-# React + Vite
+# 🔢 Calculadora PWA de Métodos Numéricos
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Aplicación Web Progresiva (PWA) de alto rendimiento para la resolución y visualización interactiva de métodos numéricos. Desarrollada con **React 19**, **Vite 8**, **Tailwind CSS v4**, **mathjs** y **vite-plugin-pwa**.
 
-Currently, two official plugins are available:
+## 🎓 Información Académica
+- **Materia:** Métodos Numéricos
+- **Programa:** Ingeniería de Software (Séptimo Semestre)
+- **Institución:** FESC (Fundación de Estudios Superiores Comfanorte) 2026-2
+- **Integrantes:**
+  - Andrés Esteban Sandoval Carreño
+  - Jhoan Sebastian Celis Pabón
+  - Zharick Nicolle Acevedo Ascanio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🧮 Métodos Numéricos Implementados
+1. **Método Iterativo Secuencial:** Iteración de Punto Fijo $x = g(x)$ con control del criterio de convergencia $|g'(x)| < 1$.
+2. **Método de Newton para Sistemas:** Solución de sistemas no lineales mediante Matriz Jacobiana $\mathbf{J}(\mathbf{x})$ y corrección $\Delta \mathbf{x}$.
+3. **Método de Bairstow:** Cálculo sistemático de raíces reales y complejas ($a \pm bi$) de polinomios mediante deflación cuadrática.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## 📁 Documentación del Proyecto
+Toda la documentación técnica y pedagógica está centralizada en la carpeta [`docs/`](./docs/README.md):
+- 💡 [Idea del Proyecto y Alcance](./docs/IDEA_DEL_PROYECTO.md)
+- 📐 [Plan de Implementación y Arquitectura](./docs/PLAN_DE_IMPLEMENTACION.md)
+- 📜 [Reglas y Convenciones de Código](./docs/REGLAS_Y_CONVENCIONES.md)
+- 🤖 [Prompt para Claude Code](./docs/PROMPT_CLAUDE_CODE.md)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+---
+
+## 🚀 Puesta en Marcha
+
+```bash
+# Instalar dependencias
+npm install
+
+# Iniciar servidor de desarrollo local
+npm run dev
+
+# Generar bundle de producción y PWA
+npm run build
+```

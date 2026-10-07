@@ -1,13 +1,28 @@
 @import "tailwindcss";
 
+/* Tipografías del tablero científico.
+   Inter para interfaz y Fira Code para fórmulas, matrices y tablas numéricas.
+   Siempre con respaldo del sistema para que la app siga legible sin conexión. */
+@theme {
+  --font-sans:
+    'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'Fira Code', 'Cascadia Code', Consolas, 'SF Mono', Menlo, monospace;
+}
+
 @layer base {
   body {
-    @apply bg-slate-950 text-slate-100 antialiased min-h-screen selection:bg-indigo-500 selection:text-white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    @apply bg-slate-950 font-sans text-slate-100 antialiased min-h-screen selection:bg-indigo-500 selection:text-white;
+  }
+
+  /* Oculta los controles nativos de los inputs numéricos para mantener el diseño limpio */
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
   }
 }
 
-/* Custom sleek scrollbar */
+/* Barra de desplazamiento sobria acorde al tema oscuro */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -24,4 +39,15 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #334155;
+}
+
+/* Respeta la preferencia de accesibilidad de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
