@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="50%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.1" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="110" fill="#0b0f19" />
+  <rect x="16" y="16" width="480" height="480" rx="98" fill="url(#glow)" stroke="url(#grad)" stroke-width="4" />
+  <!-- Math symbols and formula wave -->
+  <path d="M120 280 C 180 180, 240 380, 300 240 C 340 160, 380 200, 410 260" fill="none" stroke="url(#grad)" stroke-width="26" stroke-linecap="round" />
+  <!-- Integral / Sigma / f(x) icon marks -->
+  <circle cx="210" cy="330" r="14" fill="#38bdf8" />
+  <circle cx="300" cy="240" r="14" fill="#34d399" />
+  <text x="256" y="440" font-family="system-ui, sans-serif" font-size="52" font-weight="900" fill="#f8fafc" text-anchor="middle" letter-spacing="4">MÉTODOS</text>
+  <!-- Calculator grid icon top left -->
+  <rect x="110" y="80" width="70" height="90" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="4" />
+  <rect x="124" y="94" width="42" height="18" rx="4" fill="#38bdf8" />
+  <circle cx="128" cy="128" r="4" fill="#94a3b8" />
+  <circle cx="145" cy="128" r="4" fill="#94a3b8" />
+  <circle cx="162" cy="128" r="4" fill="#94a3b8" />
+  <circle cx="128" cy="148" r="4" fill="#94a3b8" />
+  <circle cx="145" cy="148" r="4" fill="#94a3b8" />
+  <circle cx="162" cy="148" r="4" fill="#94a3b8" />
+  <!-- Root Symbol top right -->
+  <path d="M 360 150 L 375 150 L 390 180 L 415 100 L 450 100" fill="none" stroke="#a78bfa" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
